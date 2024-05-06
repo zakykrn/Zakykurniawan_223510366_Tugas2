@@ -17,23 +17,23 @@ export default {
     return {
       inputText: '',
       appBackground: {
-        backgroundImage: "url('./src/assets/bg2.jpg')",
+        backgroundImage: "url('./assets/bg2.jpg')",
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover'
       }
     };
   },
   created() {
-    document.body.style.backgroundImage = "url('./src/assets/bg.jpg')";
+    document.body.style.backgroundImage = "url('./assets/bg.jpg')";
     document.body.style.backgroundRepeat = 'no-repeat';
     document.body.style.backgroundSize = 'cover';
   },
   methods: {
     checkInputLength() {
       if (this.inputText.length >= 12) {
-        this.appBackground.backgroundImage = "url('./src/assets/bg23.jpg')";
+        this.appBackground.backgroundImage = "url('./assets/bg23.jpg')";
       } else {
-        this.appBackground.backgroundImage = "url('./src/assets/bg2.jpg')";
+        this.appBackground.backgroundImage = "url('./assets/bg2.jpg')";
       }
     }
   }
